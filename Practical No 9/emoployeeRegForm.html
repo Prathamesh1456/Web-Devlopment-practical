@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Registration Form</title>
+    <style>
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            background-color: #9bf3ff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 500px 500px 500px rgba(255, 135, 217, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <center>
+    <h2>Employee Registration</h2>
+    </center>
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter full name" required>
+        <br><br>
+        <label>Email</label>
+        <input type="email" placeholder="Enter email" required>
+        <br><br>
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+        <br><br>
+        <label>Password</label>
+        <input type="password" placeholder="Enter password" required>
+        <br><br>
+        <label>Gender</label>
+        <div class="gender">
+            <label><input type="radio" name="gender"> Male</label><br>
+            <label><input type="radio" name="gender"> Female</label><br>
+            <label><input type="radio" name="gender"> Other</label><br>
+        </div>
+        <br><br>
+        <label>Department</label>
+        <select required>
+            <option value="">Select Department</option>
+            <option>HR</option>
+            <option>IT</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+        </select>
+        <br><br>
+        <checkbox>
+            <label>Skills:</label><br>
+            <input type="checkbox" name="c" value="c"> c  <br>
+            <input type="checkbox" name="C++" value="C++"> C++ <br>
+            <input type="checkbox" name="Python" value="Python"> Python <br>
+            <input type="checkbox" name="Java" value="Java"> Java
+        </checkbox>
+        <br><br>
+        <label>Date of Birth</label>
+        <input type="date" required>
+        <br><br>
+        <label>Address</label>
+        <textarea rows="2" placeholder="Enter address"></textarea>
+        <br><br>
+        <center>
+        <button type="submit">Register</button>
+        </center>
+    </form>
+</div>
+
+</body>
+</html>
