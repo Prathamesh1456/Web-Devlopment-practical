@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Lab</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Development Lab</h1>
+        <p>All Experiments - Live Demo</p>
+        <p>Presented by: Your Name</p>
+    </header>
+
+    <div class="container">
+
+        <!-- 🔹 Change folder names according to your repo -->
+
+        <div class="card">
+            <h3>Experiment 1</h3>
+            <p>Basic HTML Page</p>
+            <a href="exp1/index.html" target="_blank">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Experiment 2</h3>
+            <p>CSS Styling</p>
+            <a href="exp2/index.html" target="_blank">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Experiment 3</h3>
+            <p>Forms & Inputs</p>
+            <a href="exp3/index.html" target="_blank">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Experiment 4</h3>
+            <p>JavaScript Basics</p>
+            <a href="exp4/index.html" target="_blank">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Experiment 5</h3>
+            <p>DOM Manipulation</p>
+            <a href="exp5/index.html" target="_blank">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Experiment 6</h3>
+            <p>Responsive Design</p>
+            <a href="exp6/index.html" target="_blank">Open</a>
+        </div>
+
+        <!-- 👉 Add more experiments same way -->
+
+    </div>
+
+    <footer>
+        © 2026 Web Development Lab | GitHub Pages
+    </footer>
+
+</body>
+</html>
