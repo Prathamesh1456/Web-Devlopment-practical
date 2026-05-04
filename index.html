@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Development Lab</title>
+  <title>Web Development Experiments</title>
 
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     body {
@@ -19,64 +19,73 @@
 
     header {
       text-align: center;
-      padding: 40px;
+      padding: 50px 20px;
       background: linear-gradient(135deg, #4f46e5, #7c3aed);
       color: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
     header h1 {
-      font-size: 36px;
+      font-size: 38px;
+      letter-spacing: 1px;
     }
 
     header p {
-      margin-top: 10px;
+      margin-top: 8px;
       font-size: 18px;
+      opacity: 0.9;
     }
 
     .container {
       max-width: 1200px;
-      margin: 40px auto;
+      margin: 50px auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
       padding: 20px;
     }
 
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
       text-align: center;
       transition: 0.3s;
+      border: 1px solid #e5e7eb;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
     }
 
     .card h2 {
       color: #4f46e5;
       margin-bottom: 10px;
+      font-size: 22px;
     }
 
     .card p {
       color: #555;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
+      font-size: 15px;
     }
 
     .btn {
       text-decoration: none;
-      padding: 10px 15px;
+      padding: 10px 18px;
       background: #4f46e5;
       color: white;
       border-radius: 8px;
-      font-weight: bold;
+      font-weight: 600;
       display: inline-block;
+      transition: 0.3s;
     }
 
     .btn:hover {
       background: #3730a3;
+      transform: scale(1.05);
     }
 
     footer {
@@ -85,6 +94,7 @@
       background: #111827;
       color: white;
       margin-top: 40px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -92,30 +102,29 @@
 <body>
 
 <header>
-  <h1>Web Development Lab</h1>
-  <p>All 13 Experiments</p>
-  <p>Presented by: Prathamesh Pise</p>
+  <h1>Web Development Experiments</h1>
+  <p>All Practical Assignments</p>
+  <p>Roll No: 92</p>
 </header>
 
 <div class="container">
 
   <div class="card"><h2>Experiment 1</h2><p>Basic HTML</p><a href="Practical No 1/WebTechnology.html" class="btn" target="_blank">Open</a></div>
-  <div class="card"><h2>Experiment 2</h2><p>HTML Formatting</p><a href="Practical No 2/StaticWebPage.html" class="btn" target="_blank">Open</a></div>
-  <div class="card"><h2>Experiment 3</h2><p>CSS Styling</p><a href="Practical No 3/TextFormattingTag.html" class="btn" target="_blank">Open</a></div>
-  <div class="card"><h2>Experiment 4</h2><p>Forms</p><a href="Practical No 4/list.html" class="btn" target="_blank">Open</a></div>
-  <div class="card"><h2>Experiment 5</h2><p>Tables</p><a href="Practical No 5/ImageTag.html" class="btn" target="_blank">Open</a></div>
-  <div class="card"><h2>Experiment 6</h2><p>Layouts</p><a href="Practical No 6/home.html" class="btn" target="_blank">Open</a></div>
-  <div class="card"><h2>Experiment 7</h2><p>JavaScript</p><a href="Practical No 7/LinkTag.html" class="btn" target="_blank">Open</a></div>
-  <div class="card"><h2>Experiment 8</h2><p>DOM</p><a href="Practical No 8/TimeTable.html" class="btn" target="_blank">Open</a></div>
-  <div class="card"><h2>Experiment 9</h2><p>Validation</p><a href="Practical No 9/emoployeeRegForm.html" class="btn" target="_blank">Open</a></div>
-  <div class="card"><h2>Experiment 10</h2><p>Responsive</p><a href="Practical No 10/Resume.html" class="btn" target="_blank">Open</a></div>
-  <div class="card"><h2>Experiment 11</h2><p>Bootstrap</p><a href="Practical No 11/students.xml" class="btn" target="_blank">Open</a></div>
-
+  <div class="card"><h2>Experiment 2</h2><p>Static Web Page</p><a href="Practical No 2/StaticWebPage.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 3</h2><p>Text Formatting</p><a href="Practical No 3/TextFormattingTag.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 4</h2><p>List Tags</p><a href="Practical No 4/list.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 5</h2><p>Image Tag</p><a href="Practical No 5/ImageTag.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 6</h2><p>Layout Design</p><a href="Practical No 6/home.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 7</h2><p>Link Tag</p><a href="Practical No 7/LinkTag.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 8</h2><p>Time Table</p><a href="Practical No 8/TimeTable.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 9</h2><p>Employee Form</p><a href="Practical No 9/emoployeeRegForm.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 10</h2><p>Resume</p><a href="Practical No 10/Resume.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 11</h2><p>XML File</p><a href="Practical No 11/students.xml" class="btn" target="_blank">Open</a></div>
 
 </div>
 
 <footer>
-  © 2026 Web Development Lab | GitHub Pages
+  © 2026 Web Development Lab
 </footer>
 
 </body>
