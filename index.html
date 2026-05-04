@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Development Lab Experiments</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Lab</title>
 
   <style>
     * {
@@ -15,87 +15,68 @@
 
     body {
       background: linear-gradient(135deg, #eef2ff, #f8fafc);
-      color: #222;
     }
 
     header {
       text-align: center;
-      padding: 40px 20px;
+      padding: 40px;
       background: linear-gradient(135deg, #4f46e5, #7c3aed);
       color: white;
     }
 
     header h1 {
-      font-size: 38px;
-      margin-bottom: 10px;
+      font-size: 36px;
     }
 
     header p {
+      margin-top: 10px;
       font-size: 18px;
     }
 
     .container {
       max-width: 1200px;
       margin: 40px auto;
-      padding: 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
     }
 
     .card {
       background: white;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      text-align: center;
       transition: 0.3s;
-      border: 1px solid #e5e7eb;
     }
 
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+      transform: translateY(-5px);
     }
 
     .card h2 {
       color: #4f46e5;
       margin-bottom: 10px;
-      font-size: 22px;
     }
 
     .card p {
       color: #555;
-      margin-bottom: 18px;
-      font-size: 15px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
+      margin-bottom: 15px;
     }
 
     .btn {
       text-decoration: none;
-      padding: 10px 14px;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .live {
+      padding: 10px 15px;
       background: #4f46e5;
       color: white;
-    }
-
-    .source {
-      background: #e0e7ff;
-      color: #3730a3;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
     }
 
     .btn:hover {
-      opacity: 0.85;
+      background: #3730a3;
     }
 
     footer {
@@ -110,136 +91,33 @@
 
 <body>
 
-  <header>
-    <h1>Web Development Lab</h1>
-    <p>All 13 Experiments with Live Demo and Source Code</p>
-    <p>Presented by: Your Name</p>
-  </header>
+<header>
+  <h1>Web Development Lab</h1>
+  <p>All 13 Experiments</p>
+  <p>Presented by: Prathamesh Pise</p>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="card">
-      <h2>Experiment 1</h2>
-      <p>Basic HTML Web Page</p>
-      <div class="buttons">
-        <a href="exp1/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp1/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
+  <div class="card"><h2>Experiment 1</h2><p>Basic HTML</p><a href="exp1/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 2</h2><p>HTML Formatting</p><a href="exp2/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 3</h2><p>CSS Styling</p><a href="exp3/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 4</h2><p>Forms</p><a href="exp4/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 5</h2><p>Tables</p><a href="exp5/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 6</h2><p>Layouts</p><a href="exp6/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 7</h2><p>JavaScript</p><a href="exp7/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 8</h2><p>DOM</p><a href="exp8/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 9</h2><p>Validation</p><a href="exp9/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 10</h2><p>Responsive</p><a href="exp10/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 11</h2><p>Bootstrap</p><a href="exp11/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 12</h2><p>Mini Project</p><a href="exp12/index.html" class="btn" target="_blank">Open</a></div>
+  <div class="card"><h2>Experiment 13</h2><p>Final Experiment</p><a href="exp13/index.html" class="btn" target="_blank">Open</a></div>
 
-    <div class="card">
-      <h2>Experiment 2</h2>
-      <p>HTML Tags and Formatting</p>
-      <div class="buttons">
-        <a href="exp2/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp2/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
+</div>
 
-    <div class="card">
-      <h2>Experiment 3</h2>
-      <p>CSS Styling</p>
-      <div class="buttons">
-        <a href="exp3/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp3/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experiment 4</h2>
-      <p>HTML Forms</p>
-      <div class="buttons">
-        <a href="exp4/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp4/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experiment 5</h2>
-      <p>Table Design</p>
-      <div class="buttons">
-        <a href="exp5/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp5/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experiment 6</h2>
-      <p>CSS Layout</p>
-      <div class="buttons">
-        <a href="exp6/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp6/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experiment 7</h2>
-      <p>JavaScript Basics</p>
-      <div class="buttons">
-        <a href="exp7/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp7/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experiment 8</h2>
-      <p>DOM Manipulation</p>
-      <div class="buttons">
-        <a href="exp8/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp8/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experiment 9</h2>
-      <p>Form Validation</p>
-      <div class="buttons">
-        <a href="exp9/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp9/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experiment 10</h2>
-      <p>Responsive Web Page</p>
-      <div class="buttons">
-        <a href="exp10/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp10/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experiment 11</h2>
-      <p>Bootstrap Web Page</p>
-      <div class="buttons">
-        <a href="exp11/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp11/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experiment 12</h2>
-      <p>Mini Web Project</p>
-      <div class="buttons">
-        <a href="exp12/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp12/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experiment 13</h2>
-      <p>Final Web Development Experiment</p>
-      <div class="buttons">
-        <a href="exp13/index.html" class="btn live" target="_blank">Live Demo</a>
-        <a href="exp13/" class="btn source" target="_blank">Source Code</a>
-      </div>
-    </div>
-
-  </div>
-
-  <footer>
-    © 2026 Web Development Lab | GitHub Pages
-  </footer>
+<footer>
+  © 2026 Web Development Lab | GitHub Pages
+</footer>
 
 </body>
 </html>
